@@ -3,18 +3,20 @@
   <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
       <router-link :to="{ name: 'Home' }" class="navbar-brand">
-        <img src="./assets/txt-logo.png" alt="startup-brand">
+      <img src="./assets/txt-logo.png" alt="startup-brand">
       </router-link>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" ></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div style="float: right;">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto" id="nav-text">
             <li class="nav-item"><router-link :to="{ name: 'Home' }" class="nav-link">Home</router-link></li>
             <li class="nav-item"><router-link :to="{ name: 'OurStory' }" class="nav-link">Our Story</router-link></li>
             <li class="nav-item"><router-link :to="{ name: 'Projects' }" class="nav-link">Projects</router-link></li>
             <li class="nav-item"><router-link :to="{ name: 'Contacts' }" class="nav-link">Contacts</router-link></li>
           </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -42,6 +44,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: "Varela Round","Open Sans", "Poppins", Helvetica sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -67,4 +70,6 @@ html {
   background-color: #fcf3e4;
   margin-top: 100px;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap');
 </style>
