@@ -63,7 +63,7 @@ export default {
             let uri = 'http://localhost:4000/contacts/delete/'+id;
             this.items.splice(id, 1);
             this.axios.get(uri);
-            this.$router.push({name: '/Contacts'})
+            this.$router.push({path: '/Contacts'})
         }
     }
 }
